@@ -103,7 +103,7 @@ export class Ui {
     //close details and show games cards
     closeDetails() {
         document.querySelector('.btn-close').addEventListener('click', () => {
-            $('body').css('background-image', 'url(../imgs/wraper.png)');
+            $('body').removeAttr( 'style' );
             detailsUi.addClass('d-none');
             gamesUi.removeClass('d-none');
             detailsUi.html(`<div class="loading mt-5 d-flex justify-content-center align-items-center">
