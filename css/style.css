@@ -1,0 +1,126 @@
+:root{
+    --main-color: #111213;
+    --sec-color:#0b690b;
+}
+
+/*#region General */
+
+body{
+    margin-top: 200px;
+    background-image: url(../imgs/wraper.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #1b1919;
+}
+
+.bg-black-dark{
+    background-color: var(--main-color)
+}
+.bg-medium-green{
+    background-color: var(--sec-color);
+}
+.bg-scrollable-nav{
+    background-color: #2f4f50;
+}
+/*#endregion General */
+
+/*#region navbar */
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+nav{
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 0 !important;
+    z-index: 3 !important;
+}
+
+.navbar-brand a {
+    font-weight: 600
+}
+.nav-link{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: #1c971c !important;
+}
+
+.nav-color{
+    color: #e0e1e7 !important;
+ }
+ .active{
+    color: #1cd41c !important;
+ }
+/*#endregion navbar */
+
+/*#region Data */
+.card p{
+    font-size: 11px
+}
+
+.card{
+    transition: all .5s;
+    transition-delay: .1s;
+    cursor: pointer;
+    border: var(--bs-card-border-width) solid #0b690b !important;
+}
+
+.card-body{
+    height: 130px;
+}
+
+.card-text{
+    font-size: 14px;
+}
+.card img{
+    filter: grayscale(.5);
+    transition: all .5s;
+    transition-delay: .1s;
+    height: 100%;
+    border-bottom: var(--bs-card-border-width) solid #0b690b !important;
+}
+
+.card-footer{
+    border-top: var(--bs-card-border-width) solid #0b690b !important;
+
+}
+
+.card:hover img{
+    filter: grayscale(0);
+}
+
+.card:hover{
+    scale: 1.06;
+}
+/*#endregion Data */
+
+/* #region loaders */
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader:before , .loader:after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(94, 92, 92, 0.712) inset;
+  }
+  .loader:after {
+    box-shadow: 0 6px 0 var(--sec-color) inset;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {  transform: rotate(0)}
+    100% { transform: rotate(360deg)}
+  }
+        
+/* #endregion loaders */
