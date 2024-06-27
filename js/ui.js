@@ -84,7 +84,7 @@ export class Ui {
                                 <img class="w-100 rounded-3" src=${game.thumbnail} alt='${game.title} img'>
                             </div>
                             <div class="col-md-7 text-white">
-                                <h1>Title: <span>${game.title}</span></h1>
+                                <h2>Title: <span>${game.title}</span></h2>
                                 <h6>Category: <span class="bg-medium-green px-2 rounded-2">${game.genre}</span></h6>
                                 <h6>Platform: <span class="bg-medium-green px-2 rounded-2">${game.platform}</span></h6>
                                 <h6>Status: <span class="bg-medium-green px-2 rounded-2">${game.status}</span></h6>
